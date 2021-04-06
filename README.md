@@ -44,7 +44,7 @@ with comments and votes.
 
 ## TODOS
 
-- [x] Setup Redux
+- [x] Setup Redux -> 5ee8935
 - [ ] Setup React Router 
 - [ ] Create Navbar Component
 - [ ] Create Login Component
