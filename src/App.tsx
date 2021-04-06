@@ -1,12 +1,12 @@
 import { Route } from 'react-router';
 import Home from './components/Home';
-import LoginPage from './components/LoginPage';
+import LoginPage from './components/User/LoginPage';
 import Navbar from './components/Navbar';
-import SingUpPage from './components/SingUpPage';
+import SingUpPage from './components/User/SingUpPage';
 import './index.css';
 
 
-function App() {
+function App(): JSX.Element {
 
 
   return (

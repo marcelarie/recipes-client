@@ -51,7 +51,7 @@ with comments and votes.
 ## DONE 
 
 - [x] Setup Redux -> 5ee8935
-- [x] Setup React Router -> cacae4c 
+- [x] Setup React Router -> cacae4c, 43c450e
 - [x] Create Navbar Component --> 3ad2746
 - [x] Create Login Component ⤴
 - [x] Create Sing Up Component ⤴
