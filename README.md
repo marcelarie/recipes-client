@@ -44,20 +44,21 @@ with comments and votes.
 
 ## TODOS
 
-- [x] Setup Redux -> 5ee8935
-- [x] Setup React Router -> cacae4c 
-- [ ] Create Navbar Component
-- [ ] Create Login Component
-- [ ] Create Sing Up Component
-- [ ] Create Home Page Component
-- [ ] Create Recipes Details Component
-- [ ] Create Comments Component
-- [ ] Create Votes Component
 - [ ] Make Async Calls Inside Actions
 - [ ] Handle Errors on All components.
 
 
 ## DONE 
+
+- [x] Setup Redux -> 5ee8935
+- [x] Setup React Router -> cacae4c 
+- [x] Create Navbar Component --> 3ad2746
+- [x] Create Login Component ⤴
+- [x] Create Sing Up Component ⤴
+- [x] Create Home Page Component
+- [x] Create Recipes Details Component
+- [x] Create Comments Component
+- [x] Create Votes Component
 
 ## ERRORS
 
