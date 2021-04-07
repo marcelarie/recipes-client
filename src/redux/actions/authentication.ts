@@ -1,32 +1,24 @@
-import axios, { AxiosResponse } from 'axios'
+import axios from 'axios'
 import types from '../types/index'
 
 
 interface CredentialsProps {
-    username: string,
-    password: string
+    username: string;
+    password: string;
 }
 
-interface AuthenticationProps {
-    singUp: Function,
-}
+const singUp = (credentials: CredentialsProps) => {
 
-const authentication: AuthenticationProps = {
-    singUp: (credentials: CredentialsProps) => {
-        return async (dispatch: any): Promise<void> => {
+    return async (dispatch: any): Promise<void> => {
 
-            const response = await axios.post<AxiosResponse>(
-                'http://localhost:5001/login',
-                {},
-                { auth: credentials }
-            )
+        const response = await axios.post(
+            'http://localhost:5001/user/register', credentials)
 
-            dispatch({
-                type: types.LOGIN,
-                payload: response.data
-            })
-        }
+        dispatch({
+            type: types.LOGIN,
+            payload: response.data
+        })
     }
 }
 
-export default authentication
+export { singUp }

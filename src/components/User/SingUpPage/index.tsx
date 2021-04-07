@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { singUp } from '../../../redux/actions/authentication'
 
 function SingUpPage(): JSX.Element {
+
+    const dispatch = useDispatch();
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const handleSubmit = async (event: any) => {
+    const handleSubmit = async (event: any): Promise<void> => {
         event.preventDefault();
-        console.log(event)
+        dispatch(singUp({ username, password }))
     }
 
     return (
