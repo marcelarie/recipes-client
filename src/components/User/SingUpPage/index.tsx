@@ -19,6 +19,7 @@ function SingUpPage(): JSX.Element {
                     }
                     type="text"
                     name="username"
+                    value={username}
                 />
                 <input
                     onChange={
@@ -26,6 +27,7 @@ function SingUpPage(): JSX.Element {
                     }
                     type="password"
                     name="password"
+                    value={password}
                 />
                 <button>Sing Up</button>
             </form>

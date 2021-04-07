@@ -1,6 +1,7 @@
 
 const types = {
-    TEST: 'TEST'
+    LOGIN: 'LOGIN',
+    SINGUP: 'SINGUP'
 }
 
 export default types

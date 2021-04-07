@@ -8,21 +8,20 @@ import './index.css';
 
 function App(): JSX.Element {
 
-
-  return (
-    <div className="App">
-        <Navbar/>
-        <Route exact path='/'>
-            <Home/>
-        </Route>
-        <Route exact path='/login'>
-            <LoginPage/>
-        </Route>
-        <Route exact path='/sing-up'>
-            <SingUpPage/>
-        </Route>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar />
+            <Route exact path='/'>
+                <Home />
+            </Route>
+            <Route exact path='/login'>
+                <LoginPage />
+            </Route>
+            <Route exact path='/sing-up'>
+                <SingUpPage />
+            </Route>
+        </div>
+    );
 }
 
 export default App;
