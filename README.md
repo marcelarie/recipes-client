@@ -13,10 +13,10 @@ with comments and votes.
     - Handle errors returned from the API so that the users can know if anything
       went wrong
 
-- [ ] SING UP PAGE
-    - In this page users can create an account with their credentials and sign up
-    - endpoint like -> http://localhost:4000/user/sign-up
-    - One the users have logged in or signed up save the user info on the Store
+- [x] SING UP PAGE
+    - In this page users can create an account with their credentials and sign up ✅
+    - endpoint like -> http://localhost:4000/user/register ✅
+    - One the users have logged in or signed up save the user info on the Store 
 
 - [ ] HOME PAGE
     - In this page users can see the listing of the recipes from the app
@@ -44,9 +44,7 @@ with comments and votes.
 
 ## TODOS
 
-- [ ] Make Async Calls Inside Actions
 - [ ] Handle Errors on All components.
-
 
 ## DONE 
 
@@ -55,10 +53,11 @@ with comments and votes.
 - [x] Create Navbar Component --> 3ad2746
 - [x] Create Login Component ⤴
 - [x] Create Sing Up Component ⤴
-- [x] Create Home Page Component
-- [x] Create Recipes Details Component
-- [x] Create Comments Component
-- [x] Create Votes Component
+- [x] Create Home Page Component ⤴
+- [x] Create Recipes Details Component ⤴
+- [x] Create Comments Component ⤴
+- [x] Create Votes Component ⤴
+- [x] Make Async Calls Inside Actions
 
 ## ERRORS
 

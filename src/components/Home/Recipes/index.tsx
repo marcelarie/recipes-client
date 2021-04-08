@@ -1,11 +1,10 @@
 
-import React from 'react'
 import Recipe from './Recipe'
 
 function Recipes() {
     return (
         <div>
-            <Recipe/>
+            <Recipe />
         </div>
     )
 }

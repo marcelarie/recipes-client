@@ -27,6 +27,7 @@ function SingUpPage(): JSX.Element {
                     name="username"
                     placeholder="username"
                     value={username}
+                    required
                 />
                 <input
                     onChange={
@@ -37,6 +38,7 @@ function SingUpPage(): JSX.Element {
                     placeholder="email"
                     name="email"
                     value={email}
+                    required
                 />
                 <input
                     onChange={
@@ -47,6 +49,7 @@ function SingUpPage(): JSX.Element {
                     placeholder="password"
                     name="password"
                     value={password}
+                    required
                 />
                 <button>Sing Up</button>
             </form>
