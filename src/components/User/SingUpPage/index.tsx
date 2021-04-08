@@ -6,12 +6,13 @@ function SingUpPage(): JSX.Element {
 
     const dispatch = useDispatch();
 
-    const [username: String, setUsername] = useState('')
+    const [username, setUsername] = useState('')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        dispatch(singUp({ username, password }))
+        dispatch(singUp({ username, email, password }))
     }
 
     return (
@@ -24,7 +25,18 @@ function SingUpPage(): JSX.Element {
                     }
                     type="text"
                     name="username"
+                    placeholder="username"
                     value={username}
+                />
+                <input
+                    onChange={
+                        ({ target }: React.ChangeEvent<HTMLInputElement>) =>
+                            setEmail(target.value)
+                    }
+                    type="text"
+                    placeholder="email"
+                    name="email"
+                    value={email}
                 />
                 <input
                     onChange={
@@ -32,6 +44,7 @@ function SingUpPage(): JSX.Element {
                             setPassword(target.value)
                     }
                     type="password"
+                    placeholder="password"
                     name="password"
                     value={password}
                 />

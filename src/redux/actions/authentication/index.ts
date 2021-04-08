@@ -9,6 +9,7 @@ const singUp = (credentials: CredentialsProps) => {
         const response = await axios.post(
             'http://localhost:5001/user/register', credentials)
 
+        console.log(response.data)
         dispatch({
             type: authenticationTypes.SINGUP,
             payload: response.data

@@ -4,9 +4,9 @@ export const authenticationTypes = {
     SINGUP: 'SINGUP'
 }
 
-
 export interface CredentialsProps {
     username: string;
+    email: string;
     password: string;
 }
 
