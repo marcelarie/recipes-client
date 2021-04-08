@@ -1,5 +1,5 @@
 
-export interface AuthenticationState {
+interface AuthenticationState {
     token: null | string | Object
 }
 

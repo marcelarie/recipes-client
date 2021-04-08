@@ -1,15 +1,15 @@
 import axios from 'axios'
 import { Dispatch } from 'react'
-import { authenticationTypes, AuthenticationDispatchTypes, CredentialsProps } from './types'
+import { authenticationTypes, CredentialsProps, Login, SingUp } from './types'
+
 
 const singUp = (credentials: CredentialsProps) => {
 
-    return async (dispatch: Dispatch<AuthenticationDispatchTypes>) => {
+    return async (dispatch: Dispatch<SingUp>) => {
 
         const response = await axios.post(
             'http://localhost:5001/user/register', credentials)
 
-        console.log(response.data)
         dispatch({
             type: authenticationTypes.SINGUP,
             payload: response.data
@@ -17,4 +17,18 @@ const singUp = (credentials: CredentialsProps) => {
     }
 }
 
-export { singUp }
+const login = (credentials: CredentialsProps) => {
+
+    return async (dispatch: Dispatch<Login>) => {
+
+        const response = await axios.post(
+            'http://localhost:5001/user/login', credentials)
+
+        dispatch({
+            type: authenticationTypes.LOGIN,
+            payload: response.data
+        })
+    }
+}
+
+export { singUp, login }

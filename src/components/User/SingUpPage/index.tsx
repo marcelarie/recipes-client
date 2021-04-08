@@ -15,43 +15,44 @@ function SingUpPage(): JSX.Element {
         dispatch(singUp({ username, email, password }))
     }
 
+
     return (
         <div className="loginForm">
             <form onSubmit={handleSubmit}>
                 <input
-                    onChange={
-                        ({ target }: React.ChangeEvent<HTMLInputElement>) =>
-                            setUsername(target.value)
-                    }
                     type="text"
                     name="username"
                     placeholder="username"
                     value={username}
                     required
+                    onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>) =>
+                        setUsername(event.target.value)
+                    }
                 />
                 <input
-                    onChange={
-                        ({ target }: React.ChangeEvent<HTMLInputElement>) =>
-                            setEmail(target.value)
-                    }
                     type="text"
                     placeholder="email"
                     name="email"
                     value={email}
                     required
+                    onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>) =>
+                        setEmail(event.target.value)
+                    }
                 />
                 <input
-                    onChange={
-                        ({ target }: React.ChangeEvent<HTMLInputElement>) =>
-                            setPassword(target.value)
-                    }
                     type="password"
                     placeholder="password"
                     name="password"
                     value={password}
                     required
+                    onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>) =>
+                        setPassword(event.target.value)
+                    }
                 />
-                <button>Sing Up</button>
+                <button type='submit'>Sing Up</button>
             </form>
         </div>
     )

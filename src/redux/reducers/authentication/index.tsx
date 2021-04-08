@@ -4,8 +4,8 @@ import { initialState } from "./types"
 
 
 const authenticationReducer = (
-    state = initialState, action: AuthenticationDispatchTypes
-): typeof initialState => {
+    state = initialState,
+    action: AuthenticationDispatchTypes): typeof initialState => {
     switch (action.type) {
         case authenticationTypes.LOGIN:
             return { ...state, token: action.payload }
