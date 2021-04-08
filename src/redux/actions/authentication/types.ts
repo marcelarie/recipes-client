@@ -1,5 +1,5 @@
 
-const authenticationTypes = {
+export const authenticationTypes = {
     LOGIN: 'LOGIN',
     SINGUP: 'SINGUP'
 }
@@ -10,9 +10,15 @@ export interface CredentialsProps {
     password: string;
 }
 
-type LoginResponseData = {
+export type LoginResponseData = {
     username: String,
-    email: String,
+    email?: String,
+    password: String
+}
+
+export type SingUpResponseData = {
+    username: String,
+    email?: String,
     password: String
 }
 
@@ -23,8 +29,8 @@ interface Login {
 
 interface SingUp {
     type: typeof authenticationTypes.SINGUP
+    payload: SingUpResponseData
 }
 
 export type AuthenticationDispatchTypes = Login | SingUp
 
-export { authenticationTypes }

@@ -1,8 +1,6 @@
 import axios from 'axios'
 import { Dispatch } from 'react'
-import { authenticationTypes, AuthenticationDispatchTypes, CredentialsProps } from './authenticationTypes'
-
-
+import { authenticationTypes, AuthenticationDispatchTypes, CredentialsProps } from './types'
 
 const singUp = (credentials: CredentialsProps) => {
 
