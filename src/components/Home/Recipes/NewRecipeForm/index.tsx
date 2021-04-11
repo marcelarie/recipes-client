@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addRecipe } from '../../../../redux/actions/recipes';
+import { addRecipe, getRecipes } from '../../../../redux/actions/recipes';
 import './index.scss'
 
 function NewRecipeForm() {
@@ -20,6 +20,7 @@ function NewRecipeForm() {
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
         dispatch(addRecipe({ title, description, ingridients, imageUrl, author: user }))
+        dispatch(getRecipes())
     }
 
     return (
