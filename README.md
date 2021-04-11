@@ -5,9 +5,9 @@ with comments and votes.
 
 ## REQUIREMENTS
 
-- [ ] LOGIN PAGE 
-    - Request to a endpoint like -> http://localhost:4000/user/login
-    - This endpoint will return a json with the user details and the JWT
+- [x] LOGIN PAGE 
+    - Request to a endpoint like -> http://localhost:4000/user/login ✅
+    - This endpoint will return a json with the user details and the JWT ✅
 
 - [ ] ERROR HANDLING
     - Handle errors returned from the API so that the users can know if anything

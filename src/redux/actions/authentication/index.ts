@@ -3,6 +3,7 @@ import { Dispatch } from 'react'
 import { authenticationTypes, CredentialsProps, Login, SingUp } from './types'
 
 
+
 const singUp = (credentials: CredentialsProps) => {
 
     return async (dispatch: Dispatch<SingUp>) => {

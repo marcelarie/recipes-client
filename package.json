@@ -1,6 +1,7 @@
 {
   "name": "recipes-client",
   "version": "0.1.0",
+  "proxy": "http://localhost:5001",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -24,6 +25,7 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.32.8",
     "styled-components": "^5.2.3",
+    "typesafe-actions": "^5.1.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -53,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "moment": "^2.29.1",
     "typescript-styled-plugin": "^0.15.0"
   }
 }
