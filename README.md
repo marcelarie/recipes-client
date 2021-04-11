@@ -45,8 +45,6 @@ with comments and votes.
 ## TODOS
 
 - [ ] Handle Errors on All components.
-- [ ] Create user state
-- [ ] Add user state as author on recipes
 
 ## DONE 
 
@@ -60,6 +58,7 @@ with comments and votes.
 - [x] Create Comments Component ⤴
 - [x] Create Votes Component ⤴
 - [x] Make Async Calls Inside Actions
+- [x] Add user state as author on recipes
 
 ## ERRORS
 
