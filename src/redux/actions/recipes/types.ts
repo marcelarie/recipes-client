@@ -29,6 +29,8 @@ export interface AddRecipeBodyProps {
     title: string;
     description: string;
     ingridients: string;
+    imageUrl: string;
+    author: string;
 }
 export interface GetRecipes {
     type: typeof recipesTypes.GET_RECIPES,

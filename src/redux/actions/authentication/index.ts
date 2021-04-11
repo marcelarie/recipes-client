@@ -32,4 +32,5 @@ const login = (credentials: CredentialsProps) => {
     }
 }
 
+
 export { singUp, login }

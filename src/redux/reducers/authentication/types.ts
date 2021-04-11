@@ -1,6 +1,6 @@
 
 interface AuthenticationState {
-    token: null | string | Object
+    token: null | string | Object,
 }
 
 export const initialState: AuthenticationState = {

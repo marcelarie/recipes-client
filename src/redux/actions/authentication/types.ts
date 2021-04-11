@@ -1,7 +1,8 @@
 
 export const authenticationTypes = {
     LOGIN: 'LOGIN',
-    SINGUP: 'SINGUP'
+    SINGUP: 'SINGUP',
+    SET_USER: 'SET_USER'
 }
 
 export interface CredentialsProps {

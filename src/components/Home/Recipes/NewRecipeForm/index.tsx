@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addRecipe } from '../../../../redux/actions/recipes';
 import './index.scss'
 
@@ -12,9 +12,14 @@ function NewRecipeForm() {
     const [ingridients, setIngridients] = useState('')
     const [imageUrl, setImageUrl] = useState('')
 
+    const user = useSelector(
+        (store: any) =>
+            store.auth.token.user.username
+    )
+
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        dispatch(addRecipe({ title, description, ingridients }))
+        dispatch(addRecipe({ title, description, ingridients, imageUrl, author: user }))
     }
 
     return (
