@@ -9,6 +9,9 @@ const recipesReducer = (
         case recipesTypes.GET_RECIPES:
             console.log(action.payload)
             return { ...state, recipes: action.payload }
+        case recipesTypes.ADD_RECIPE:
+            console.log(action.payload)
+            return state
         default:
             return state
     }

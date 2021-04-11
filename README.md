@@ -18,10 +18,10 @@ with comments and votes.
     - endpoint like -> http://localhost:4000/user/register ✅
     - One the users have logged in or signed up save the user info on the Store 
 
-- [ ] HOME PAGE
-    - In this page users can see the listing of the recipes from the app
-    - Each recipes should be rendered in a Card and have a link to the recipes 
-      details page
+- [x] HOME PAGE
+    - In this page users can see the listing of the recipes from the app ✅
+    - Each recipes should be rendered in a Card and have a link to the recipes  
+      details page 
 
 - [ ] RECIPE DETAILS PAGE
     - In this page users can see the individual details of the recipes
@@ -45,6 +45,8 @@ with comments and votes.
 ## TODOS
 
 - [ ] Handle Errors on All components.
+- [ ] Create user state
+- [ ] Add user state as author on recipes
 
 ## DONE 
 
